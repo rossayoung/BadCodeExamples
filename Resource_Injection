@@ -1,0 +1,4 @@
+BEGIN
+filename := SUBSTR(OWA_UTIL.get_cgi_env('PATH_INFO'), 2);
+WPG_DOCLOAD.download_file(filename);
+END;
